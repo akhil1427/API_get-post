@@ -21,5 +21,5 @@ from app.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('productcurd/',productcurd.as_view(),name='productcurd'),
+    path('productcurd/<id>/',productcurd.as_view(),name='productcurd'),
 ]
